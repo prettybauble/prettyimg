@@ -30,9 +30,9 @@ proc fromBMP*(src: string): ImgObj =
 
   case depth
   of 32:
-    for y in 0..<h:
+    for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, result.h - y - 1] = initColor[uint8](
+        result[x, y] = initColor[uint8](
           read[uint8](src, offset),
           read[uint8](src, offset + 1),
           read[uint8](src, offset + 2),
@@ -40,9 +40,9 @@ proc fromBMP*(src: string): ImgObj =
         ).toFloat()
         inc offset, 4
   of 24:
-    for y in 0..<h:
+    for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, result.h - y - 1] = initColor[uint8](
+        result[x, y] = initColor[uint8](
           read[uint8](src, offset + 2),
           read[uint8](src, offset + 1),
           read[uint8](src, offset),
@@ -93,9 +93,9 @@ func toBMP*(img: var ImgObj, depth: uint16 = 32,
   for i in 0..<48:
     result.add(0u8) # unused 48 bytes.
 
-  for y in 0..<img.h:
+  for y in countdown(img.h-1, 0):
     for x in 0..<img.w:
-      let clr = img[x, img.h - y - 1].toInt()
+      let clr = img[x, y].toInt()
       result.add(clr.r)
       result.add(clr.g)
       result.add(clr.b)
