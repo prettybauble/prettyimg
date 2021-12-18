@@ -17,7 +17,7 @@ nimble install github.com/prettybauble/prettyimg
 ## Now Available
 |Format|Writing|Reading|
 |:--:  |:--:   |:--:   |
-|BMP   |✔️    |        |
+|BMP   |✔️    |✔️     |
 
 
 <div align="center">
