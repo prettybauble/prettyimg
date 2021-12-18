@@ -1,5 +1,5 @@
 [Package]
-name = "prettytmpl"
+name = "prettyimg"
 author = "prettybauble"
 version = "0.0.1"
 description = "Template for prettybauble repositories"
