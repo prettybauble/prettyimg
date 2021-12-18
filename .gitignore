@@ -13,3 +13,14 @@ out/
 
 # database files
 *.db
+
+
+# Image files
+*.png
+*.jpeg
+*.jpg
+*.bmp
+*.webp
+*.gif
+*.tiff
+*.svg
