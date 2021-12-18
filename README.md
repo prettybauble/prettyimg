@@ -22,8 +22,8 @@ nimble install github.com/prettybauble/prettyimg
 
 <div align="center">
 
-|:--:    |:--:     |
 |[Docs][]|[Tests][]|
+|--------|---------|
 
 </div>
 
