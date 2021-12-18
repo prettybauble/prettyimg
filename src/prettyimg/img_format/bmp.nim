@@ -4,7 +4,7 @@ import
   ../enums,
   ../color,
   ../exceptions,
-  ../private/numstr,
+  prettystr,
   strutils
 
 
