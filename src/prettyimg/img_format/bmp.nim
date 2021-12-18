@@ -1,14 +1,14 @@
 # author: Ethosa
 import
   ../img,
-  ../enums,
-  ../color,
-  ../exceptions,
+  ../core/enums,
+  ../core/color,
+  ../core/exceptions,
   prettystr,
   strutils
 
 
-func fromBMP*(src: string): ImgObj =
+proc fromBMP*(src: string): ImgObj =
   ## Parses the BMP Image from source string.
   if not src.startsWith("BM"):
     raise newException(
@@ -22,6 +22,8 @@ func fromBMP*(src: string): ImgObj =
     compression = BitmapCompression(read[uint16](src, 30))
   var offset = int(read[uint32](src, 10))
 
+  # Size should be = `src` length
+  assert size == uint32(src.len())
   assert compression in [bmBiBITFIELDS, bmBiRGB]
 
   result = initImg(w, h)
@@ -98,7 +100,7 @@ func toBMP*(img: var ImgObj, depth: uint16 = 32,
       result.add(clr.g)
       result.add(clr.b)
       result.add(clr.a)
-  result.insert(2, uint32(result.len()))
+  result.insert(2, uint32(result.len() + 4))
 
 
 proc saveBMP*(img: var ImgObj, filename: string, depth: uint16 = 32,

@@ -1,7 +1,7 @@
 # author: Ethosa
 import
-  color,
-  exceptions
+  core/color,
+  core/exceptions
 
 type
   ImgObj* = object

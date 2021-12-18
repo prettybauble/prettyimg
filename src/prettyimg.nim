@@ -1,9 +1,8 @@
 # author: Ethosa
 import
-  prettyimg/color,
+  prettyimg/core,
   prettyimg/img,
-  prettyimg/img_format,
-  prettyimg/enums
+  prettyimg/img_format
 
 export
-  img, color, img_format, enums
+  core, img, img_format
