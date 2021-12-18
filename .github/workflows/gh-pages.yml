@@ -41,7 +41,7 @@ jobs:
 
       - name: Install requires
         run: |
-          nimble install
+          nimble install https://github.com/prettybauble/prettystr
 
       - name: Generate API documents
         run: nimble doc --index:on --project --out:docs --hints:off src/prettyimg.nim

@@ -48,7 +48,7 @@ jobs:
 
       - name: Install requires
         run: |
-          nimble install
+          nimble install https://github.com/prettybauble/prettystr
 
       - name: Build tests
         run: |
