@@ -1,0 +1,6 @@
+ColorValueError	prettyimg/core/exceptions.html#ColorValueError	exceptions: ColorValueError	
+ReadFromStringError	prettyimg/core/exceptions.html#ReadFromStringError	exceptions: ReadFromStringError	
+ImageOutOfBoundsError	prettyimg/core/exceptions.html#ImageOutOfBoundsError	exceptions: ImageOutOfBoundsError	
+ColorStringParseError	prettyimg/core/exceptions.html#ColorStringParseError	exceptions: ColorStringParseError	
+ImageReadError	prettyimg/core/exceptions.html#ImageReadError	exceptions: ImageReadError	
+PngChannelError	prettyimg/core/exceptions.html#PngChannelError	exceptions: PngChannelError	

@@ -1,0 +1,16 @@
+ColorObj	prettyimg/core/color.html#ColorObj	color: ColorObj	
+ColorRef	prettyimg/core/color.html#ColorRef	color: ColorRef	
+initColor	prettyimg/core/color.html#initColor	color: initColor(): ColorObj[uint8]	
+newColor	prettyimg/core/color.html#newColor	color: newColor(): ColorRef[uint8]	
+initColor	prettyimg/core/color.html#initColor,T,T,T	color: initColor[T](r, g, b: T): ColorObj[T]	
+newColor	prettyimg/core/color.html#newColor,T,T,T	color: newColor[T](r, g, b: T): ColorRef[T]	
+initColor	prettyimg/core/color.html#initColor,T,T,T,T	color: initColor[T](r, g, b, a: T): ColorObj[T]	
+newColor	prettyimg/core/color.html#newColor,T,T,T,T	color: newColor[T](r, g, b, a: T): ColorRef[T]	
+Color	prettyimg/core/color.html#Color	color: Color(): ColorObj[float]	
+Color	prettyimg/core/color.html#Color,uint8,uint8,uint8,uint8	color: Color(r, g, b: uint8; a: uint8 = 255&apos;u8): ColorObj[uint8]	
+Color	prettyimg/core/color.html#Color,float,float,float,float	color: Color(r, g, b: float; a: float = 1.0&apos;f32): ColorObj[float]	
+parseColor	prettyimg/core/color.html#parseColor,int	color: parseColor(src: int): ColorObj[float]	
+parseColor	prettyimg/core/color.html#parseColor,string	color: parseColor(src: string): ColorObj[float]	
+toFloat	prettyimg/core/color.html#toFloat	color: toFloat[T](color: ColorObj[T] | ColorRef[T]): ColorObj[float]	
+toInt	prettyimg/core/color.html#toInt	color: toInt[T](color: ColorObj[T] | ColorRef[T]): ColorObj[uint8]	
+interpolate	prettyimg/core/color.html#interpolate,,,float	color: interpolate[T, U](color1: ColorObj[T] | ColorRef[T];\n                  color2: ColorObj[U] | ColorRef[U]; fraction: float): ColorObj[\n    float]	

@@ -1,0 +1,11 @@
+bmBiRGB	prettyimg/core/enums.html#bmBiRGB	BitmapCompression.bmBiRGB	
+bmBiRLE8	prettyimg/core/enums.html#bmBiRLE8	BitmapCompression.bmBiRLE8	
+bmBiRLE4	prettyimg/core/enums.html#bmBiRLE4	BitmapCompression.bmBiRLE4	
+bmBiBITFIELDS	prettyimg/core/enums.html#bmBiBITFIELDS	BitmapCompression.bmBiBITFIELDS	
+bmBiJPEG	prettyimg/core/enums.html#bmBiJPEG	BitmapCompression.bmBiJPEG	
+bmBiPNG	prettyimg/core/enums.html#bmBiPNG	BitmapCompression.bmBiPNG	
+bmBiALPHABITFIELDS	prettyimg/core/enums.html#bmBiALPHABITFIELDS	BitmapCompression.bmBiALPHABITFIELDS	
+bmBiCMYK	prettyimg/core/enums.html#bmBiCMYK	BitmapCompression.bmBiCMYK	
+bmBiCMYKRLE8	prettyimg/core/enums.html#bmBiCMYKRLE8	BitmapCompression.bmBiCMYKRLE8	
+bmBiCMYKRLE4	prettyimg/core/enums.html#bmBiCMYKRLE4	BitmapCompression.bmBiCMYKRLE4	
+BitmapCompression	prettyimg/core/enums.html#BitmapCompression	enums: BitmapCompression	

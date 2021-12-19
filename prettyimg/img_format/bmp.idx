@@ -1,0 +1,4 @@
+fromBmp	prettyimg/img_format/bmp.html#fromBmp,string	bmp: fromBmp(src: string): ImgObj	
+toBmp	prettyimg/img_format/bmp.html#toBmp,ImgObj,uint16,BitmapCompression	bmp: toBmp(img: ImgObj; depth: uint16 = 32;\n      compression: BitmapCompression = bmBiBITFIELDS): string	
+saveBmp	prettyimg/img_format/bmp.html#saveBmp,ImgObj,string,uint16,BitmapCompression	bmp: saveBmp(img: ImgObj; filename: string; depth: uint16 = 32;\n        compression: BitmapCompression = bmBiBITFIELDS)	
+loadBmp	prettyimg/img_format/bmp.html#loadBmp,string	bmp: loadBmp(filename: string): ImgObj	
