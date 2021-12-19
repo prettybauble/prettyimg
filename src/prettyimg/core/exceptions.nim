@@ -7,4 +7,5 @@ type
   ImageOutOfBoundsError* = object of ValueError
   ColorStringParseError* = object of ValueError
   ImageReadError* = object of ValueError
+  PngChannelError* = object of ValueError
 {.pop.}

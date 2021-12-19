@@ -4,15 +4,17 @@
 ### Library for working with images
 [![tests](https://github.com/prettybauble/prettyimg/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettyimg/actions/workflows/test.yml)
 
-#### Stable version - 0.0.1
+#### Stable version - 0.0.2
 
 </div>
 
 ## Get Started
 Install:
-```bash
-nimble install github.com/prettybauble/prettyimg
-```
+
+-
+  ```bash
+  nimble install github.com/prettybauble/prettyimg
+  ```
 
 ## Now Available
 |Format|Writing|Reading|

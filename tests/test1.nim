@@ -34,18 +34,28 @@ suite "Image":
 
   test "fromBMP func":
     var
-      encoded = image.toBMP()
-      img = fromBMP(encoded)
-    img.saveBMP("encoded.bmp")
+      encoded = image.toBmp()
+      img = fromBmp(encoded)
+    img.saveBmp("encoded.bmp")
 
   test "loadBMP and save it":
-    var img = loadBMP("assets/sample.bmp")
+    var img = loadBmp("assets/sample.bmp")
     img.saveBMP("sample.bmp")
 
   test "crop & paste image and save it":
     var
-      img = loadBMP("assets/sample_sd.bmp")
+      img = loadBmp("assets/sample_sd.bmp")
       cropped = crop(img, 0, 0, 360, 360)
-    cropped.saveBMP("cropped.bmp")
+    cropped.saveBmp("cropped.bmp")
     img.paste(cropped, 256, 0)
-    img.saveBMP("pasted.bmp")
+    img.saveBmp("pasted.bmp")
+
+  test "encode to PNG":
+    var
+      img = loadBmp("assets/sample_sd.bmp")
+      encoded = img.toPng()
+    echo encoded
+
+  test "save to PNG":
+    var img = loadBmp("assets/sample_sd.bmp")
+    img.savePng("output.png")

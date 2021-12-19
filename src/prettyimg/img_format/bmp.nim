@@ -8,7 +8,7 @@ import
   strutils
 
 
-proc fromBMP*(src: string): ImgObj =
+proc fromBmp*(src: string): ImgObj =
   ## Parses the BMP Image from source string.
   if not src.startsWith("BM"):
     raise newException(
@@ -55,7 +55,7 @@ proc fromBMP*(src: string): ImgObj =
     )
 
 
-func toBMP*(img: var ImgObj, depth: uint16 = 32,
+func toBmp*(img: ImgObj, depth: uint16 = 32,
             compression: BitmapCompression = bmBiBITFIELDS): string =
   ## Encodes image to BMP.
   ## https://en.wikipedia.org/wiki/BMP_file_format
@@ -103,15 +103,15 @@ func toBMP*(img: var ImgObj, depth: uint16 = 32,
   result.insert(2, uint32(result.len() + 4))
 
 
-proc saveBMP*(img: var ImgObj, filename: string, depth: uint16 = 32,
+proc saveBmp*(img: ImgObj, filename: string, depth: uint16 = 32,
               compression: BitmapCompression = bmBiBITFIELDS) =
   ## Saves image as BMP.
   var file = open(filename, fmWrite)
-  file.write(toBMP(img, depth, compression))
+  file.write(toBmp(img, depth, compression))
   file.close()
 
-proc loadBMP*(filename: string): ImgObj =
+proc loadBmp*(filename: string): ImgObj =
   ## Loads BMP file.
   var file = open(filename)
-  result = fromBMP(file.readAll())
+  result = fromBmp(file.readAll())
   file.close()

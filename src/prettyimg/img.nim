@@ -10,7 +10,7 @@ type
   ImgRef* = ref ImgObj
 
 
-proc initImg*(w, h: int, background: ColorObj[float] = initColor[float](0, 0, 0, 0)): ImgObj =
+proc initImg*(w, h: int, background: ColorObj[float] = initColor[float](1, 1, 1)): ImgObj =
   ## Initializes a new image object.
   ##
   ## ### Arguments:
