@@ -70,14 +70,14 @@ window.addEventListener('DOMContentLoaded', main);
 <div class="document" id="documentId">
   <div class="container">
     <h1 class="title">Index</h1>
-    Modules: <a href="prettyimg/core/color.html">prettyimg/core/color</a>, <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img.html">prettyimg/img</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>.<br/><p /><h2>API symbols</h2>
+    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img.html">prettyimg/img</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%5B%5D%3D%60" href="#%60%5B%5D%3D%60"><span>`[]=`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: `[]=`[T](img: var ImgObj; x, y: int; v: ColorObj[T])" href="prettyimg/img.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj%5BT%5D">img: `[]=`[T](img: var ImgObj; x, y: int; v: ColorObj[T])</a></li>
+          data-doc-search-tag="img: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)" href="prettyimg/img.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj">img: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)</a></li>
           </ul></dd>
 <dt><a name="%60%5B%5D%60" href="#%60%5B%5D%60"><span>`[]`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: `[]`(img: ImgObj; x, y: int): ColorObj[float]" href="prettyimg/img.html#%5B%5D%2CImgObj%2Cint%2Cint">img: `[]`(img: ImgObj; x, y: int): ColorObj[float]</a></li>
+          data-doc-search-tag="img: `[]`(img: ImgObj; x, y: int): ColorObj" href="prettyimg/img.html#%5B%5D%2CImgObj%2Cint%2Cint">img: `[]`(img: ImgObj; x, y: int): ColorObj</a></li>
           </ul></dd>
 <dt><a name="BitmapCompression" href="#BitmapCompression"><span>BitmapCompression:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -123,30 +123,6 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="BitmapCompression.bmBiRLE8" href="prettyimg/core/enums.html#bmBiRLE8">BitmapCompression.bmBiRLE8</a></li>
           </ul></dd>
-<dt><a name="Color" href="#Color"><span>Color:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: Color(): ColorObj[float]" href="prettyimg/core/color.html#Color">color: Color(): ColorObj[float]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: Color(r, g, b: float; a: float = 1.0&apos;f32): ColorObj[float]" href="prettyimg/core/color.html#Color%2Cfloat%2Cfloat%2Cfloat%2Cfloat">color: Color(r, g, b: float; a: float = 1.0&apos;f32): ColorObj[float]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: Color(r, g, b: uint8; a: uint8 = 255&apos;u8): ColorObj[uint8]" href="prettyimg/core/color.html#Color%2Cuint8%2Cuint8%2Cuint8%2Cuint8">color: Color(r, g, b: uint8; a: uint8 = 255&apos;u8): ColorObj[uint8]</a></li>
-          </ul></dd>
-<dt><a name="ColorObj" href="#ColorObj"><span>ColorObj:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: ColorObj" href="prettyimg/core/color.html#ColorObj">color: ColorObj</a></li>
-          </ul></dd>
-<dt><a name="ColorRef" href="#ColorRef"><span>ColorRef:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: ColorRef" href="prettyimg/core/color.html#ColorRef">color: ColorRef</a></li>
-          </ul></dd>
-<dt><a name="ColorStringParseError" href="#ColorStringParseError"><span>ColorStringParseError:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="exceptions: ColorStringParseError" href="prettyimg/core/exceptions.html#ColorStringParseError">exceptions: ColorStringParseError</a></li>
-          </ul></dd>
-<dt><a name="ColorValueError" href="#ColorValueError"><span>ColorValueError:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="exceptions: ColorValueError" href="prettyimg/core/exceptions.html#ColorValueError">exceptions: ColorValueError</a></li>
-          </ul></dd>
 <dt><a name="contains" href="#contains"><span>contains:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="img: contains(img: ImgObj; x, y: int): bool" href="prettyimg/img.html#contains%2CImgObj%2Cint%2Cint">img: contains(img: ImgObj; x, y: int): bool</a></li>
@@ -157,7 +133,7 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="data" href="#data"><span>data:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: data(img: ImgObj): seq[ColorObj[float]]" href="prettyimg/img.html#data%2CImgObj">img: data(img: ImgObj): seq[ColorObj[float]]</a></li>
+          data-doc-search-tag="img: data(img: ImgObj): seq[ColorObj]" href="prettyimg/img.html#data%2CImgObj">img: data(img: ImgObj): seq[ColorObj]</a></li>
           </ul></dd>
 <dt><a name="fromBmp" href="#fromBmp"><span>fromBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -183,43 +159,13 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="img: ImgRef" href="prettyimg/img.html#ImgRef">img: ImgRef</a></li>
           </ul></dd>
-<dt><a name="initColor" href="#initColor"><span>initColor:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: initColor(): ColorObj[uint8]" href="prettyimg/core/color.html#initColor">color: initColor(): ColorObj[uint8]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: initColor[T](r, g, b: T): ColorObj[T]" href="prettyimg/core/color.html#initColor%2CT%2CT%2CT">color: initColor[T](r, g, b: T): ColorObj[T]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: initColor[T](r, g, b, a: T): ColorObj[T]" href="prettyimg/core/color.html#initColor%2CT%2CT%2CT%2CT">color: initColor[T](r, g, b, a: T): ColorObj[T]</a></li>
-          </ul></dd>
 <dt><a name="initImg" href="#initImg"><span>initImg:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: initImg(w, h: int; background: ColorObj[float] = initColor[float](1, 1, 1)): ImgObj" href="prettyimg/img.html#initImg%2Cint%2Cint%2CColorObj%5Bfloat%5D">img: initImg(w, h: int; background: ColorObj[float] = initColor[float](1, 1, 1)): ImgObj</a></li>
-          </ul></dd>
-<dt><a name="interpolate" href="#interpolate"><span>interpolate:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: interpolate[T, U](color1: ColorObj[T] | ColorRef[T];
-                  color2: ColorObj[U] | ColorRef[U]; fraction: float): ColorObj[
-    float]" href="prettyimg/core/color.html#interpolate%2C%2C%2Cfloat">color: interpolate[T, U](color1: ColorObj[T] | ColorRef[T];
-                  color2: ColorObj[U] | ColorRef[U]; fraction: float): ColorObj[
-    float]</a></li>
+          data-doc-search-tag="img: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj" href="prettyimg/img.html#initImg%2Cint%2Cint%2CColorObj">img: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj</a></li>
           </ul></dd>
 <dt><a name="loadBmp" href="#loadBmp"><span>loadBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="bmp: loadBmp(filename: string): ImgObj" href="prettyimg/img_format/bmp.html#loadBmp%2Cstring">bmp: loadBmp(filename: string): ImgObj</a></li>
-          </ul></dd>
-<dt><a name="newColor" href="#newColor"><span>newColor:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: newColor(): ColorRef[uint8]" href="prettyimg/core/color.html#newColor">color: newColor(): ColorRef[uint8]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: newColor[T](r, g, b: T): ColorRef[T]" href="prettyimg/core/color.html#newColor%2CT%2CT%2CT">color: newColor[T](r, g, b: T): ColorRef[T]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: newColor[T](r, g, b, a: T): ColorRef[T]" href="prettyimg/core/color.html#newColor%2CT%2CT%2CT%2CT">color: newColor[T](r, g, b, a: T): ColorRef[T]</a></li>
-          </ul></dd>
-<dt><a name="parseColor" href="#parseColor"><span>parseColor:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: parseColor(src: int): ColorObj[float]" href="prettyimg/core/color.html#parseColor%2Cint">color: parseColor(src: int): ColorObj[float]</a></li>
-          <li><a class="reference external"
-          data-doc-search-tag="color: parseColor(src: string): ColorObj[float]" href="prettyimg/core/color.html#parseColor%2Cstring">color: parseColor(src: string): ColorObj[float]</a></li>
           </ul></dd>
 <dt><a name="paste" href="#paste"><span>paste:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -245,14 +191,6 @@ window.addEventListener('DOMContentLoaded', main);
       compression: BitmapCompression = bmBiBITFIELDS): string" href="prettyimg/img_format/bmp.html#toBmp%2CImgObj%2Cuint16%2CBitmapCompression">bmp: toBmp(img: ImgObj; depth: uint16 = 32;
       compression: BitmapCompression = bmBiBITFIELDS): string</a></li>
           </ul></dd>
-<dt><a name="toFloat" href="#toFloat"><span>toFloat:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: toFloat[T](color: ColorObj[T] | ColorRef[T]): ColorObj[float]" href="prettyimg/core/color.html#toFloat">color: toFloat[T](color: ColorObj[T] | ColorRef[T]): ColorObj[float]</a></li>
-          </ul></dd>
-<dt><a name="toInt" href="#toInt"><span>toInt:</span></a></dt><dd><ul class="simple">
-<li><a class="reference external"
-          data-doc-search-tag="color: toInt[T](color: ColorObj[T] | ColorRef[T]): ColorObj[uint8]" href="prettyimg/core/color.html#toInt">color: toInt[T](color: ColorObj[T] | ColorRef[T]): ColorObj[uint8]</a></li>
-          </ul></dd>
 <dt><a name="w" href="#w"><span>w:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="img: w(img: ImgObj): int" href="prettyimg/img.html#w%2CImgObj">img: w(img: ImgObj): int</a></li>
@@ -262,7 +200,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-19 13:13:36 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-20 11:39:23 UTC</small>
       </div>
     </div>
   </div>

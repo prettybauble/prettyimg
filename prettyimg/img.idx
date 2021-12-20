@@ -1,12 +1,12 @@
 ImgObj	prettyimg/img.html#ImgObj	img: ImgObj	
 ImgRef	prettyimg/img.html#ImgRef	img: ImgRef	
-initImg	prettyimg/img.html#initImg,int,int,ColorObj[float]	img: initImg(w, h: int; background: ColorObj[float] = initColor[float](1, 1, 1)): ImgObj	
-data	prettyimg/img.html#data,ImgObj	img: data(img: ImgObj): seq[ColorObj[float]]	
+initImg	prettyimg/img.html#initImg,int,int,ColorObj	img: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj	
+data	prettyimg/img.html#data,ImgObj	img: data(img: ImgObj): seq[ColorObj]	
 w	prettyimg/img.html#w,ImgObj	img: w(img: ImgObj): int	
 h	prettyimg/img.html#h,ImgObj	img: h(img: ImgObj): int	
 contains	prettyimg/img.html#contains,ImgObj,int,int	img: contains(img: ImgObj; x, y: int): bool	
-`[]`	prettyimg/img.html#[],ImgObj,int,int	img: `[]`(img: ImgObj; x, y: int): ColorObj[float]	
-`[]=`	prettyimg/img.html#[]=,ImgObj,int,int,ColorObj[T]	img: `[]=`[T](img: var ImgObj; x, y: int; v: ColorObj[T])	
+`[]`	prettyimg/img.html#[],ImgObj,int,int	img: `[]`(img: ImgObj; x, y: int): ColorObj	
+`[]=`	prettyimg/img.html#[]=,ImgObj,int,int,ColorObj	img: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)	
 crop	prettyimg/img.html#crop,ImgObj,int,int,int,int	img: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj	
 paste	prettyimg/img.html#paste,ImgObj,ImgObj,int,int	img: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)	
 Arguments:	prettyimg/img.html#argumentscolon	   Arguments:	
