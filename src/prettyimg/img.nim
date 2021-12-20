@@ -1,16 +1,16 @@
 # author: Ethosa
 import
-  core/color,
-  core/exceptions
+  core/exceptions,
+  prettyclr
 
 type
   ImgObj* = object
     w, h: int
-    data: seq[ColorObj[float]]
+    data: seq[ColorObj]
   ImgRef* = ref ImgObj
 
 
-proc initImg*(w, h: int, background: ColorObj[float] = initColor[float](1, 1, 1)): ImgObj =
+proc initImg*(w, h: int, background: ColorObj = Color(1f, 1, 1)): ImgObj =
   ## Initializes a new image object.
   ##
   ## ### Arguments:
@@ -22,14 +22,14 @@ proc initImg*(w, h: int, background: ColorObj[float] = initColor[float](1, 1, 1)
     result.data.add(background)
 
 
-func `data`*(img: ImgObj): seq[ColorObj[float]] {.inline.} = img.data
+func `data`*(img: ImgObj): seq[ColorObj] {.inline.} = img.data
 func `w`*(img: ImgObj): int {.inline.} = img.w
 func `h`*(img: ImgObj): int {.inline.} = img.h
 
 func contains*(img: ImgObj, x, y: int): bool {.inline.} =
   x <= img.w and y <= img.h
 
-func `[]`*(img: ImgObj, x, y: int): ColorObj[float] {.inline.} =
+func `[]`*(img: ImgObj, x, y: int): ColorObj {.inline.} =
   ## Returns pixel at `x`,`y` position.
   if not img.contains(x, y):
     raise newException(
@@ -38,13 +38,13 @@ func `[]`*(img: ImgObj, x, y: int): ColorObj[float] {.inline.} =
     )
   img.data[img.w*y + x]
 
-func `[]=`*[T](img: var ImgObj, x, y: int, v: ColorObj[T]) =
+func `[]=`*(img: var ImgObj, x, y: int, v: ColorObj) =
   if not img.contains(x, y):
     raise newException(
       ImageOutOfBoundsError,
       $x & ", " & $y & " point is out of image bounds."
     )
-  img.data[img.w*y + x] = v.toFloat()
+  img.data[img.w*y + x] = v
 
 
 func crop*(img: ImgObj, x1, y1, x2, y2: int): ImgObj =

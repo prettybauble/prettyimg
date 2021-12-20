@@ -2,9 +2,9 @@
 import
   ../img,
   ../core/enums,
-  ../core/color,
   ../core/exceptions,
   prettystr,
+  prettyclr,
   strutils
 
 
@@ -32,22 +32,22 @@ proc fromBmp*(src: string): ImgObj =
   of 32:
     for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, y] = initColor[uint8](
+        result[x, y] = Color(
           read[uint8](src, offset),
           read[uint8](src, offset + 1),
           read[uint8](src, offset + 2),
           read[uint8](src, offset + 3)
-        ).toFloat()
+        )
         inc offset, 4
   of 24:
     for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, y] = initColor[uint8](
+        result[x, y] = Color(
           read[uint8](src, offset + 2),
           read[uint8](src, offset + 1),
           read[uint8](src, offset),
           255
-        ).toFloat()
+        )
         inc offset, 3
   else:
     raise newException(
