@@ -9,4 +9,4 @@ srcDir = "src"
 [Deps]
 Requires: "nim >= 1.4.0"
 Requires: "prettystr >= 1.0.2"
-Requires: "prettyclr >= 1.0.1"
+Requires: "prettyclr >= 1.0.2"

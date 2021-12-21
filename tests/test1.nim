@@ -29,3 +29,6 @@ suite "Image":
     cropped.saveBmp("cropped.bmp")
     img.paste(cropped, 256, 0)
     img.saveBmp("pasted.bmp")
+
+  test "other":
+    assert (0, 0) in image  # image.contains(x, y)

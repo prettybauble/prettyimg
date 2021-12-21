@@ -1,6 +1,6 @@
 # author: Ethosa
 import
-  ../img,
+  ../img/image,
   ../core/enums,
   ../core/exceptions,
   prettystr,
