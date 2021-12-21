@@ -1,0 +1,2 @@
+crop	prettyimg/img/basic.html#crop,ImgObj,int,int,int,int	basic: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj	
+paste	prettyimg/img/basic.html#paste,ImgObj,ImgObj,int,int	basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)	

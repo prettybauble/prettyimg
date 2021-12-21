@@ -70,14 +70,14 @@ window.addEventListener('DOMContentLoaded', main);
 <div class="document" id="documentId">
   <div class="container">
     <h1 class="title">Index</h1>
-    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img.html">prettyimg/img</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>.<br/><p /><h2>API symbols</h2>
+    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img/basic.html">prettyimg/img/basic</a>, <a href="prettyimg/img/image.html">prettyimg/img/image</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%5B%5D%3D%60" href="#%60%5B%5D%3D%60"><span>`[]=`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)" href="prettyimg/img.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj">img: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)</a></li>
+          data-doc-search-tag="image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)" href="prettyimg/img/image.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj">image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)</a></li>
           </ul></dd>
 <dt><a name="%60%5B%5D%60" href="#%60%5B%5D%60"><span>`[]`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: `[]`(img: ImgObj; x, y: int): ColorObj" href="prettyimg/img.html#%5B%5D%2CImgObj%2Cint%2Cint">img: `[]`(img: ImgObj; x, y: int): ColorObj</a></li>
+          data-doc-search-tag="image: `[]`(img: ImgObj; x, y: int): ColorObj" href="prettyimg/img/image.html#%5B%5D%2CImgObj%2Cint%2Cint">image: `[]`(img: ImgObj; x, y: int): ColorObj</a></li>
           </ul></dd>
 <dt><a name="BitmapCompression" href="#BitmapCompression"><span>BitmapCompression:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -125,15 +125,17 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="contains" href="#contains"><span>contains:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: contains(img: ImgObj; x, y: int): bool" href="prettyimg/img.html#contains%2CImgObj%2Cint%2Cint">img: contains(img: ImgObj; x, y: int): bool</a></li>
+          data-doc-search-tag="image: contains(img: ImgObj; x, y: int): bool" href="prettyimg/img/image.html#contains%2CImgObj%2Cint%2Cint">image: contains(img: ImgObj; x, y: int): bool</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="image: contains(img: ImgObj; xy: tuple[x, y: int]): bool" href="prettyimg/img/image.html#contains%2CImgObj%2Ctuple%5Bint%2Cint%5D">image: contains(img: ImgObj; xy: tuple[x, y: int]): bool</a></li>
           </ul></dd>
 <dt><a name="crop" href="#crop"><span>crop:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj" href="prettyimg/img.html#crop%2CImgObj%2Cint%2Cint%2Cint%2Cint">img: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj</a></li>
+          data-doc-search-tag="basic: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj" href="prettyimg/img/basic.html#crop%2CImgObj%2Cint%2Cint%2Cint%2Cint">basic: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj</a></li>
           </ul></dd>
 <dt><a name="data" href="#data"><span>data:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: data(img: ImgObj): seq[ColorObj]" href="prettyimg/img.html#data%2CImgObj">img: data(img: ImgObj): seq[ColorObj]</a></li>
+          data-doc-search-tag="image: data(img: ImgObj): seq[ColorObj]" href="prettyimg/img/image.html#data%2CImgObj">image: data(img: ImgObj): seq[ColorObj]</a></li>
           </ul></dd>
 <dt><a name="fromBmp" href="#fromBmp"><span>fromBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -141,7 +143,7 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="h" href="#h"><span>h:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: h(img: ImgObj): int" href="prettyimg/img.html#h%2CImgObj">img: h(img: ImgObj): int</a></li>
+          data-doc-search-tag="image: h(img: ImgObj): int" href="prettyimg/img/image.html#h%2CImgObj">image: h(img: ImgObj): int</a></li>
           </ul></dd>
 <dt><a name="ImageOutOfBoundsError" href="#ImageOutOfBoundsError"><span>ImageOutOfBoundsError:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -153,15 +155,15 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="ImgObj" href="#ImgObj"><span>ImgObj:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: ImgObj" href="prettyimg/img.html#ImgObj">img: ImgObj</a></li>
+          data-doc-search-tag="image: ImgObj" href="prettyimg/img/image.html#ImgObj">image: ImgObj</a></li>
           </ul></dd>
 <dt><a name="ImgRef" href="#ImgRef"><span>ImgRef:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: ImgRef" href="prettyimg/img.html#ImgRef">img: ImgRef</a></li>
+          data-doc-search-tag="image: ImgRef" href="prettyimg/img/image.html#ImgRef">image: ImgRef</a></li>
           </ul></dd>
 <dt><a name="initImg" href="#initImg"><span>initImg:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj" href="prettyimg/img.html#initImg%2Cint%2Cint%2CColorObj">img: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj</a></li>
+          data-doc-search-tag="image: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj" href="prettyimg/img/image.html#initImg%2Cint%2Cint%2CColorObj">image: initImg(w, h: int; background: ColorObj = Color(1.0&apos;f32, 1, 1)): ImgObj</a></li>
           </ul></dd>
 <dt><a name="loadBmp" href="#loadBmp"><span>loadBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -169,7 +171,7 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="paste" href="#paste"><span>paste:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)" href="prettyimg/img.html#paste%2CImgObj%2CImgObj%2Cint%2Cint">img: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)</a></li>
+          data-doc-search-tag="basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)" href="prettyimg/img/basic.html#paste%2CImgObj%2CImgObj%2Cint%2Cint">basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)</a></li>
           </ul></dd>
 <dt><a name="PngChannelError" href="#PngChannelError"><span>PngChannelError:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -193,14 +195,14 @@ window.addEventListener('DOMContentLoaded', main);
           </ul></dd>
 <dt><a name="w" href="#w"><span>w:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="img: w(img: ImgObj): int" href="prettyimg/img.html#w%2CImgObj">img: w(img: ImgObj): int</a></li>
+          data-doc-search-tag="image: w(img: ImgObj): int" href="prettyimg/img/image.html#w%2CImgObj">image: w(img: ImgObj): int</a></li>
           </ul></dd>
 </dl>
     <div class="row">
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-20 11:39:23 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-21 15:25:35 UTC</small>
       </div>
     </div>
   </div>
