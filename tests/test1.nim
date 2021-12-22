@@ -30,5 +30,9 @@ suite "Image":
     img.paste(cropped, 256, 0)
     img.saveBmp("pasted.bmp")
 
+  test "rotate image by 90 degrees":
+    var img = loadBmp("assets/sample_sd.bmp")
+    img.rotated90().saveBMP("rotated.bmp")
+
   test "other":
     assert (0, 0) in image  # image.contains(x, y)
