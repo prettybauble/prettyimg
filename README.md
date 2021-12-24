@@ -4,7 +4,7 @@
 ### Library for working with images
 [![tests](https://github.com/prettybauble/prettyimg/actions/workflows/test.yml/badge.svg)](https://github.com/prettybauble/prettyimg/actions/workflows/test.yml)
 
-#### Stable version - 0.0.2
+#### Stable version - 0.0.3
 
 </div>
 
@@ -20,6 +20,7 @@ Install:
 |Format|Writing|Reading|
 |:--:  |:--:   |:--:   |
 |BMP   |✔️    |✔️     |
+|PNG   |✔️    |❌     |
 
 
 <div align="center">

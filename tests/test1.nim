@@ -36,3 +36,7 @@ suite "Image":
 
   test "other":
     assert (0, 0) in image  # image.contains(x, y)
+
+  test "save to PNG":
+    var img = loadBmp("assets/sample.bmp")
+    img.savePng("output.png")

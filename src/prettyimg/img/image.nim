@@ -26,6 +26,10 @@ func initImg*(w, h: int, background: ColorObj = Color(1f, 1, 1)): ImgObj =
 func `data`*(img: ImgObj): seq[ColorObj] = img.data
 func `w`*(img: ImgObj): int = img.w
 func `h`*(img: ImgObj): int = img.h
+func `rgba`*(img: ImgObj): seq[ColorRGBA] =
+  result = @[]
+  for i in img.data:
+    result.add(i.toInt())
 
 func contains*(img: ImgObj, x, y: int): bool =
   x <= img.w and y <= img.h
