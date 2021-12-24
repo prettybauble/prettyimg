@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', main);
 <div class="document" id="documentId">
   <div class="container">
     <h1 class="title">Index</h1>
-    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img/basic.html">prettyimg/img/basic</a>, <a href="prettyimg/img/image.html">prettyimg/img/image</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>.<br/><p /><h2>API symbols</h2>
+    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img/basic.html">prettyimg/img/basic</a>, <a href="prettyimg/img/image.html">prettyimg/img/image</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>, <a href="prettyimg/img_format/png.html">prettyimg/img_format/png</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%5B%5D%3D%60" href="#%60%5B%5D%3D%60"><span>`[]=`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)" href="prettyimg/img/image.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj">image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)</a></li>
@@ -123,6 +123,10 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="BitmapCompression.bmBiRLE8" href="prettyimg/core/enums.html#bmBiRLE8">BitmapCompression.bmBiRLE8</a></li>
           </ul></dd>
+<dt><a name="chunk" href="#chunk"><span>chunk:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="png: chunk(kind: PngChunkKind; data: string): string" href="prettyimg/img_format/png.html#chunk%2CPngChunkKind%2Cstring">png: chunk(kind: PngChunkKind; data: string): string</a></li>
+          </ul></dd>
 <dt><a name="contains" href="#contains"><span>contains:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="image: contains(img: ImgObj; x, y: int): bool" href="prettyimg/img/image.html#contains%2CImgObj%2Cint%2Cint">image: contains(img: ImgObj; x, y: int): bool</a></li>
@@ -173,13 +177,101 @@ window.addEventListener('DOMContentLoaded', main);
 <li><a class="reference external"
           data-doc-search-tag="basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)" href="prettyimg/img/basic.html#paste%2CImgObj%2CImgObj%2Cint%2Cint">basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)</a></li>
           </ul></dd>
-<dt><a name="PngChannelError" href="#PngChannelError"><span>PngChannelError:</span></a></dt><dd><ul class="simple">
+<dt><a name="pcbKGD" href="#pcbKGD"><span>pcbKGD:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="exceptions: PngChannelError" href="prettyimg/core/exceptions.html#PngChannelError">exceptions: PngChannelError</a></li>
+          data-doc-search-tag="PngChunkKind.pcbKGD" href="prettyimg/core/enums.html#pcbKGD">PngChunkKind.pcbKGD</a></li>
+          </ul></dd>
+<dt><a name="pccHRM" href="#pccHRM"><span>pccHRM:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pccHRM" href="prettyimg/core/enums.html#pccHRM">PngChunkKind.pccHRM</a></li>
+          </ul></dd>
+<dt><a name="pcdSIG" href="#pcdSIG"><span>pcdSIG:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcdSIG" href="prettyimg/core/enums.html#pcdSIG">PngChunkKind.pcdSIG</a></li>
+          </ul></dd>
+<dt><a name="pceXIF" href="#pceXIF"><span>pceXIF:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pceXIF" href="prettyimg/core/enums.html#pceXIF">PngChunkKind.pceXIF</a></li>
+          </ul></dd>
+<dt><a name="pcgAMA" href="#pcgAMA"><span>pcgAMA:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcgAMA" href="prettyimg/core/enums.html#pcgAMA">PngChunkKind.pcgAMA</a></li>
+          </ul></dd>
+<dt><a name="pchIST" href="#pchIST"><span>pchIST:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pchIST" href="prettyimg/core/enums.html#pchIST">PngChunkKind.pchIST</a></li>
+          </ul></dd>
+<dt><a name="pciCCP" href="#pciCCP"><span>pciCCP:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pciCCP" href="prettyimg/core/enums.html#pciCCP">PngChunkKind.pciCCP</a></li>
+          </ul></dd>
+<dt><a name="pcIDAT" href="#pcIDAT"><span>pcIDAT:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcIDAT" href="prettyimg/core/enums.html#pcIDAT">PngChunkKind.pcIDAT</a></li>
+          </ul></dd>
+<dt><a name="pcIEND" href="#pcIEND"><span>pcIEND:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcIEND" href="prettyimg/core/enums.html#pcIEND">PngChunkKind.pcIEND</a></li>
+          </ul></dd>
+<dt><a name="pcIHDR" href="#pcIHDR"><span>pcIHDR:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcIHDR" href="prettyimg/core/enums.html#pcIHDR">PngChunkKind.pcIHDR</a></li>
+          </ul></dd>
+<dt><a name="pciTXt" href="#pciTXt"><span>pciTXt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pciTXt" href="prettyimg/core/enums.html#pciTXt">PngChunkKind.pciTXt</a></li>
+          </ul></dd>
+<dt><a name="pcpHYs" href="#pcpHYs"><span>pcpHYs:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcpHYs" href="prettyimg/core/enums.html#pcpHYs">PngChunkKind.pcpHYs</a></li>
+          </ul></dd>
+<dt><a name="pcPLTE" href="#pcPLTE"><span>pcPLTE:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcPLTE" href="prettyimg/core/enums.html#pcPLTE">PngChunkKind.pcPLTE</a></li>
+          </ul></dd>
+<dt><a name="pcsBIT" href="#pcsBIT"><span>pcsBIT:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcsBIT" href="prettyimg/core/enums.html#pcsBIT">PngChunkKind.pcsBIT</a></li>
+          </ul></dd>
+<dt><a name="pcsPLT" href="#pcsPLT"><span>pcsPLT:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcsPLT" href="prettyimg/core/enums.html#pcsPLT">PngChunkKind.pcsPLT</a></li>
+          </ul></dd>
+<dt><a name="pcsRGB" href="#pcsRGB"><span>pcsRGB:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcsRGB" href="prettyimg/core/enums.html#pcsRGB">PngChunkKind.pcsRGB</a></li>
+          </ul></dd>
+<dt><a name="pcsTER" href="#pcsTER"><span>pcsTER:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pcsTER" href="prettyimg/core/enums.html#pcsTER">PngChunkKind.pcsTER</a></li>
+          </ul></dd>
+<dt><a name="pctEXt" href="#pctEXt"><span>pctEXt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pctEXt" href="prettyimg/core/enums.html#pctEXt">PngChunkKind.pctEXt</a></li>
+          </ul></dd>
+<dt><a name="pctIME" href="#pctIME"><span>pctIME:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pctIME" href="prettyimg/core/enums.html#pctIME">PngChunkKind.pctIME</a></li>
+          </ul></dd>
+<dt><a name="pctRNS" href="#pctRNS"><span>pctRNS:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pctRNS" href="prettyimg/core/enums.html#pctRNS">PngChunkKind.pctRNS</a></li>
+          </ul></dd>
+<dt><a name="pczTXt" href="#pczTXt"><span>pczTXt:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="PngChunkKind.pczTXt" href="prettyimg/core/enums.html#pczTXt">PngChunkKind.pczTXt</a></li>
+          </ul></dd>
+<dt><a name="PngChunkKind" href="#PngChunkKind"><span>PngChunkKind:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="enums: PngChunkKind" href="prettyimg/core/enums.html#PngChunkKind">enums: PngChunkKind</a></li>
           </ul></dd>
 <dt><a name="ReadFromStringError" href="#ReadFromStringError"><span>ReadFromStringError:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="exceptions: ReadFromStringError" href="prettyimg/core/exceptions.html#ReadFromStringError">exceptions: ReadFromStringError</a></li>
+          </ul></dd>
+<dt><a name="rgba" href="#rgba"><span>rgba:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="image: rgba(img: ImgObj): seq[ColorRgba]" href="prettyimg/img/image.html#rgba%2CImgObj">image: rgba(img: ImgObj): seq[ColorRgba]</a></li>
           </ul></dd>
 <dt><a name="rotated90" href="#rotated90"><span>rotated90:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -191,11 +283,19 @@ window.addEventListener('DOMContentLoaded', main);
         compression: BitmapCompression = bmBiBITFIELDS)" href="prettyimg/img_format/bmp.html#saveBmp%2CImgObj%2Cstring%2Cuint16%2CBitmapCompression">bmp: saveBmp(img: ImgObj; filename: string; depth: uint16 = 32;
         compression: BitmapCompression = bmBiBITFIELDS)</a></li>
           </ul></dd>
+<dt><a name="savePng" href="#savePng"><span>savePng:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="png: savePng(img: var ImgObj; filename: string)" href="prettyimg/img_format/png.html#savePng%2CImgObj%2Cstring">png: savePng(img: var ImgObj; filename: string)</a></li>
+          </ul></dd>
 <dt><a name="toBmp" href="#toBmp"><span>toBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="bmp: toBmp(img: ImgObj; depth: uint16 = 32;
       compression: BitmapCompression = bmBiBITFIELDS): string" href="prettyimg/img_format/bmp.html#toBmp%2CImgObj%2Cuint16%2CBitmapCompression">bmp: toBmp(img: ImgObj; depth: uint16 = 32;
       compression: BitmapCompression = bmBiBITFIELDS): string</a></li>
+          </ul></dd>
+<dt><a name="toPng" href="#toPng"><span>toPng:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="png: toPng(img: var ImgObj; channels: int = 4): string" href="prettyimg/img_format/png.html#toPng%2CImgObj%2Cint">png: toPng(img: var ImgObj; channels: int = 4): string</a></li>
           </ul></dd>
 <dt><a name="w" href="#w"><span>w:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -206,7 +306,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-22 14:12:16 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 16:59:29 UTC</small>
       </div>
     </div>
   </div>

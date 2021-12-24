@@ -9,3 +9,25 @@ bmBiCMYK	prettyimg/core/enums.html#bmBiCMYK	BitmapCompression.bmBiCMYK
 bmBiCMYKRLE8	prettyimg/core/enums.html#bmBiCMYKRLE8	BitmapCompression.bmBiCMYKRLE8	
 bmBiCMYKRLE4	prettyimg/core/enums.html#bmBiCMYKRLE4	BitmapCompression.bmBiCMYKRLE4	
 BitmapCompression	prettyimg/core/enums.html#BitmapCompression	enums: BitmapCompression	
+pcIHDR	prettyimg/core/enums.html#pcIHDR	PngChunkKind.pcIHDR	
+pcPLTE	prettyimg/core/enums.html#pcPLTE	PngChunkKind.pcPLTE	
+pcIDAT	prettyimg/core/enums.html#pcIDAT	PngChunkKind.pcIDAT	
+pcIEND	prettyimg/core/enums.html#pcIEND	PngChunkKind.pcIEND	
+pcbKGD	prettyimg/core/enums.html#pcbKGD	PngChunkKind.pcbKGD	
+pccHRM	prettyimg/core/enums.html#pccHRM	PngChunkKind.pccHRM	
+pcdSIG	prettyimg/core/enums.html#pcdSIG	PngChunkKind.pcdSIG	
+pceXIF	prettyimg/core/enums.html#pceXIF	PngChunkKind.pceXIF	
+pcgAMA	prettyimg/core/enums.html#pcgAMA	PngChunkKind.pcgAMA	
+pchIST	prettyimg/core/enums.html#pchIST	PngChunkKind.pchIST	
+pciCCP	prettyimg/core/enums.html#pciCCP	PngChunkKind.pciCCP	
+pciTXt	prettyimg/core/enums.html#pciTXt	PngChunkKind.pciTXt	
+pcpHYs	prettyimg/core/enums.html#pcpHYs	PngChunkKind.pcpHYs	
+pcsBIT	prettyimg/core/enums.html#pcsBIT	PngChunkKind.pcsBIT	
+pcsPLT	prettyimg/core/enums.html#pcsPLT	PngChunkKind.pcsPLT	
+pcsRGB	prettyimg/core/enums.html#pcsRGB	PngChunkKind.pcsRGB	
+pcsTER	prettyimg/core/enums.html#pcsTER	PngChunkKind.pcsTER	
+pctEXt	prettyimg/core/enums.html#pctEXt	PngChunkKind.pctEXt	
+pctIME	prettyimg/core/enums.html#pctIME	PngChunkKind.pctIME	
+pctRNS	prettyimg/core/enums.html#pctRNS	PngChunkKind.pctRNS	
+pczTXt	prettyimg/core/enums.html#pczTXt	PngChunkKind.pczTXt	
+PngChunkKind	prettyimg/core/enums.html#PngChunkKind	enums: PngChunkKind	

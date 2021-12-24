@@ -113,6 +113,29 @@ window.addEventListener('DOMContentLoaded', main);
   bmBiCMYK,                 ## only Windows Metafile CMYK
   bmBiCMYKRLE8,             ## only Windows Metafile CMYK
   bmBiCMYKRLE4               ## only Windows Metafile CMYK">BitmapCompression</a></li>
+  <li><a class="reference" href="#PngChunkKind"
+    title="PngChunkKind = enum
+  pcIHDR = &quot;IHDR&quot;,          ## 13 bytes total. must be the first chunk.
+  pcPLTE = &quot;PLTE&quot;,          ## contains the palette: a list of colors.
+  pcIDAT = &quot;IDAT&quot;,          ## contains the image, which may be split among multiple IDAT chunks.
+  pcIEND = &quot;IEND&quot;,          ## marks the image end
+  pcbKGD = &quot;bKGD&quot;,          ## Contains default background color
+  pccHRM = &quot;cHRM&quot;,          ## gives the chromaticity coordinates of the display primaries and white point.
+  pcdSIG = &quot;dSIG&quot;,          ## is for storing digital signatures.
+  pceXIF = &quot;eXIF&quot;,          ## stores Exif metadata.
+  pcgAMA = &quot;gAMA&quot;,          ## specifies gamma. The gAMA chunk contains only 4 bytes.
+  pchIST = &quot;hIST&quot;,          ## can store the histogram, or total amount of each color in the image.
+  pciCCP = &quot;iCCP&quot;,          ## is an ICC color profile.
+  pciTXt = &quot;iTXt&quot;,          ## contains a keyword and UTF-8 text, with encodings for possible compression and translations marked with language tag.
+  pcpHYs = &quot;pHYs&quot;,          ## holds the intended pixel size (or pixel aspect ratio)
+  pcsBIT = &quot;sBIT&quot;,          ## (significant bits) indicates the color-accuracy of the source data
+  pcsPLT = &quot;sPLT&quot;,          ## suggests a palette to use if the full range of colors is unavailable.
+  pcsRGB = &quot;sRGB&quot;,          ## indicates that the standard sRGB color space is used
+  pcsTER = &quot;sTER&quot;,          ## stereo-image indicator chunk for stereoscopic images.
+  pctEXt = &quot;tEXt&quot;,          ## can store text that can be represented in ISO/IEC 8859-1
+  pctIME = &quot;tIME&quot;,          ## stores the time that the image was last changed.
+  pctRNS = &quot;tRNS&quot;,          ## contains transparency information
+  pczTXt = &quot;zTXt&quot;            ## contains compressed text (and a compression method marker) with the same limits as `tEXt`.">PngChunkKind</a></li>
 
   </ul>
 </li>
@@ -146,6 +169,35 @@ window.addEventListener('DOMContentLoaded', main);
 
 </dd>
 </div>
+<div id="PngChunkKind">
+<dt><pre><a href="enums.html#PngChunkKind"><span class="Identifier">PngChunkKind</span></a> <span class="Other">=</span> <span class="Keyword">enum</span>
+  <span class="Identifier">pcIHDR</span> <span class="Other">=</span> <span class="StringLit">&quot;IHDR&quot;</span><span class="Other">,</span>          <span class="Comment">## 13 bytes total. must be the first chunk.</span>
+  <span class="Identifier">pcPLTE</span> <span class="Other">=</span> <span class="StringLit">&quot;PLTE&quot;</span><span class="Other">,</span>          <span class="Comment">## contains the palette: a list of colors.</span>
+  <span class="Identifier">pcIDAT</span> <span class="Other">=</span> <span class="StringLit">&quot;IDAT&quot;</span><span class="Other">,</span>          <span class="Comment">## contains the image, which may be split among multiple IDAT chunks.</span>
+  <span class="Identifier">pcIEND</span> <span class="Other">=</span> <span class="StringLit">&quot;IEND&quot;</span><span class="Other">,</span>          <span class="Comment">## marks the image end</span>
+  <span class="Identifier">pcbKGD</span> <span class="Other">=</span> <span class="StringLit">&quot;bKGD&quot;</span><span class="Other">,</span>          <span class="Comment">## Contains default background color</span>
+  <span class="Identifier">pccHRM</span> <span class="Other">=</span> <span class="StringLit">&quot;cHRM&quot;</span><span class="Other">,</span>          <span class="Comment">## gives the chromaticity coordinates of the display primaries and white point.</span>
+  <span class="Identifier">pcdSIG</span> <span class="Other">=</span> <span class="StringLit">&quot;dSIG&quot;</span><span class="Other">,</span>          <span class="Comment">## is for storing digital signatures.</span>
+  <span class="Identifier">pceXIF</span> <span class="Other">=</span> <span class="StringLit">&quot;eXIF&quot;</span><span class="Other">,</span>          <span class="Comment">## stores Exif metadata.</span>
+  <span class="Identifier">pcgAMA</span> <span class="Other">=</span> <span class="StringLit">&quot;gAMA&quot;</span><span class="Other">,</span>          <span class="Comment">## specifies gamma. The gAMA chunk contains only 4 bytes.</span>
+  <span class="Identifier">pchIST</span> <span class="Other">=</span> <span class="StringLit">&quot;hIST&quot;</span><span class="Other">,</span>          <span class="Comment">## can store the histogram, or total amount of each color in the image.</span>
+  <span class="Identifier">pciCCP</span> <span class="Other">=</span> <span class="StringLit">&quot;iCCP&quot;</span><span class="Other">,</span>          <span class="Comment">## is an ICC color profile.</span>
+  <span class="Identifier">pciTXt</span> <span class="Other">=</span> <span class="StringLit">&quot;iTXt&quot;</span><span class="Other">,</span>          <span class="Comment">## contains a keyword and UTF-8 text, with encodings for possible compression and translations marked with language tag.</span>
+  <span class="Identifier">pcpHYs</span> <span class="Other">=</span> <span class="StringLit">&quot;pHYs&quot;</span><span class="Other">,</span>          <span class="Comment">## holds the intended pixel size (or pixel aspect ratio)</span>
+  <span class="Identifier">pcsBIT</span> <span class="Other">=</span> <span class="StringLit">&quot;sBIT&quot;</span><span class="Other">,</span>          <span class="Comment">## (significant bits) indicates the color-accuracy of the source data</span>
+  <span class="Identifier">pcsPLT</span> <span class="Other">=</span> <span class="StringLit">&quot;sPLT&quot;</span><span class="Other">,</span>          <span class="Comment">## suggests a palette to use if the full range of colors is unavailable.</span>
+  <span class="Identifier">pcsRGB</span> <span class="Other">=</span> <span class="StringLit">&quot;sRGB&quot;</span><span class="Other">,</span>          <span class="Comment">## indicates that the standard sRGB color space is used</span>
+  <span class="Identifier">pcsTER</span> <span class="Other">=</span> <span class="StringLit">&quot;sTER&quot;</span><span class="Other">,</span>          <span class="Comment">## stereo-image indicator chunk for stereoscopic images.</span>
+  <span class="Identifier">pctEXt</span> <span class="Other">=</span> <span class="StringLit">&quot;tEXt&quot;</span><span class="Other">,</span>          <span class="Comment">## can store text that can be represented in ISO/IEC 8859-1</span>
+  <span class="Identifier">pctIME</span> <span class="Other">=</span> <span class="StringLit">&quot;tIME&quot;</span><span class="Other">,</span>          <span class="Comment">## stores the time that the image was last changed.</span>
+  <span class="Identifier">pctRNS</span> <span class="Other">=</span> <span class="StringLit">&quot;tRNS&quot;</span><span class="Other">,</span>          <span class="Comment">## contains transparency information</span>
+  <span class="Identifier">pczTXt</span> <span class="Other">=</span> <span class="StringLit">&quot;zTXt&quot;</span>            <span class="Comment">## contains compressed text (and a compression method marker) with the same limits as `tEXt`.</span></pre></dt>
+<dd>
+
+
+
+</dd>
+</div>
 
 </dl></div>
 
@@ -156,7 +208,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-22 14:12:16 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 16:59:28 UTC</small>
       </div>
     </div>
   </div>

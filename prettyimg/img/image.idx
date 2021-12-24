@@ -4,6 +4,7 @@ initImg	prettyimg/img/image.html#initImg,int,int,ColorObj	image: initImg(w, h: i
 data	prettyimg/img/image.html#data,ImgObj	image: data(img: ImgObj): seq[ColorObj]	
 w	prettyimg/img/image.html#w,ImgObj	image: w(img: ImgObj): int	
 h	prettyimg/img/image.html#h,ImgObj	image: h(img: ImgObj): int	
+rgba	prettyimg/img/image.html#rgba,ImgObj	image: rgba(img: ImgObj): seq[ColorRgba]	
 contains	prettyimg/img/image.html#contains,ImgObj,int,int	image: contains(img: ImgObj; x, y: int): bool	
 contains	prettyimg/img/image.html#contains,ImgObj,tuple[int,int]	image: contains(img: ImgObj; xy: tuple[x, y: int]): bool	
 `[]`	prettyimg/img/image.html#[],ImgObj,int,int	image: `[]`(img: ImgObj; x, y: int): ColorObj	
