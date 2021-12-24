@@ -1,3 +1,4 @@
 ReadFromStringError	prettyimg/core/exceptions.html#ReadFromStringError	exceptions: ReadFromStringError	
 ImageOutOfBoundsError	prettyimg/core/exceptions.html#ImageOutOfBoundsError	exceptions: ImageOutOfBoundsError	
 ImageReadError	prettyimg/core/exceptions.html#ImageReadError	exceptions: ImageReadError	
+IcoError	prettyimg/core/exceptions.html#IcoError	exceptions: IcoError	

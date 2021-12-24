@@ -1,0 +1,3 @@
+toIco	prettyimg/img_format/ico.html#toIco,seq[ImgObj],IcoKind	ico: toIco(imgs: seq[ImgObj]; kind: IcoKind = ikIco): string	
+toIco	prettyimg/img_format/ico.html#toIco,ImgObj,IcoKind	ico: toIco(img: ImgObj; kind: IcoKind = ikIco): string	
+saveIco	prettyimg/img_format/ico.html#saveIco,ImgObj,string,IcoKind	ico: saveIco(img: ImgObj; filename: string; kind: IcoKind = ikIco)	

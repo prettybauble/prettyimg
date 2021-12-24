@@ -31,3 +31,6 @@ pctIME	prettyimg/core/enums.html#pctIME	PngChunkKind.pctIME
 pctRNS	prettyimg/core/enums.html#pctRNS	PngChunkKind.pctRNS	
 pczTXt	prettyimg/core/enums.html#pczTXt	PngChunkKind.pczTXt	
 PngChunkKind	prettyimg/core/enums.html#PngChunkKind	enums: PngChunkKind	
+ikIco	prettyimg/core/enums.html#ikIco	IcoKind.ikIco	
+ikCur	prettyimg/core/enums.html#ikCur	IcoKind.ikCur	
+IcoKind	prettyimg/core/enums.html#IcoKind	enums: IcoKind	

@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', main);
 <div class="document" id="documentId">
   <div class="container">
     <h1 class="title">Index</h1>
-    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img/basic.html">prettyimg/img/basic</a>, <a href="prettyimg/img/image.html">prettyimg/img/image</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>, <a href="prettyimg/img_format/png.html">prettyimg/img_format/png</a>.<br/><p /><h2>API symbols</h2>
+    Modules: <a href="prettyimg/core/enums.html">prettyimg/core/enums</a>, <a href="prettyimg/core/exceptions.html">prettyimg/core/exceptions</a>, <a href="prettyimg/img/basic.html">prettyimg/img/basic</a>, <a href="prettyimg/img/image.html">prettyimg/img/image</a>, <a href="prettyimg/img_format/bmp.html">prettyimg/img_format/bmp</a>, <a href="prettyimg/img_format/ico.html">prettyimg/img_format/ico</a>, <a href="prettyimg/img_format/png.html">prettyimg/img_format/png</a>.<br/><p /><h2>API symbols</h2>
 <dl><dt><a name="%60%5B%5D%3D%60" href="#%60%5B%5D%3D%60"><span>`[]=`:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)" href="prettyimg/img/image.html#%5B%5D%3D%2CImgObj%2Cint%2Cint%2CColorObj">image: `[]=`(img: var ImgObj; x, y: int; v: ColorObj)</a></li>
@@ -148,6 +148,22 @@ window.addEventListener('DOMContentLoaded', main);
 <dt><a name="h" href="#h"><span>h:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
           data-doc-search-tag="image: h(img: ImgObj): int" href="prettyimg/img/image.html#h%2CImgObj">image: h(img: ImgObj): int</a></li>
+          </ul></dd>
+<dt><a name="IcoError" href="#IcoError"><span>IcoError:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="exceptions: IcoError" href="prettyimg/core/exceptions.html#IcoError">exceptions: IcoError</a></li>
+          </ul></dd>
+<dt><a name="IcoKind" href="#IcoKind"><span>IcoKind:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="enums: IcoKind" href="prettyimg/core/enums.html#IcoKind">enums: IcoKind</a></li>
+          </ul></dd>
+<dt><a name="ikCur" href="#ikCur"><span>ikCur:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="IcoKind.ikCur" href="prettyimg/core/enums.html#ikCur">IcoKind.ikCur</a></li>
+          </ul></dd>
+<dt><a name="ikIco" href="#ikIco"><span>ikIco:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="IcoKind.ikIco" href="prettyimg/core/enums.html#ikIco">IcoKind.ikIco</a></li>
           </ul></dd>
 <dt><a name="ImageOutOfBoundsError" href="#ImageOutOfBoundsError"><span>ImageOutOfBoundsError:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -283,9 +299,13 @@ window.addEventListener('DOMContentLoaded', main);
         compression: BitmapCompression = bmBiBITFIELDS)" href="prettyimg/img_format/bmp.html#saveBmp%2CImgObj%2Cstring%2Cuint16%2CBitmapCompression">bmp: saveBmp(img: ImgObj; filename: string; depth: uint16 = 32;
         compression: BitmapCompression = bmBiBITFIELDS)</a></li>
           </ul></dd>
+<dt><a name="saveIco" href="#saveIco"><span>saveIco:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="ico: saveIco(img: ImgObj; filename: string; kind: IcoKind = ikIco)" href="prettyimg/img_format/ico.html#saveIco%2CImgObj%2Cstring%2CIcoKind">ico: saveIco(img: ImgObj; filename: string; kind: IcoKind = ikIco)</a></li>
+          </ul></dd>
 <dt><a name="savePng" href="#savePng"><span>savePng:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="png: savePng(img: var ImgObj; filename: string)" href="prettyimg/img_format/png.html#savePng%2CImgObj%2Cstring">png: savePng(img: var ImgObj; filename: string)</a></li>
+          data-doc-search-tag="png: savePng(img: ImgObj; filename: string)" href="prettyimg/img_format/png.html#savePng%2CImgObj%2Cstring">png: savePng(img: ImgObj; filename: string)</a></li>
           </ul></dd>
 <dt><a name="toBmp" href="#toBmp"><span>toBmp:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -293,9 +313,15 @@ window.addEventListener('DOMContentLoaded', main);
       compression: BitmapCompression = bmBiBITFIELDS): string" href="prettyimg/img_format/bmp.html#toBmp%2CImgObj%2Cuint16%2CBitmapCompression">bmp: toBmp(img: ImgObj; depth: uint16 = 32;
       compression: BitmapCompression = bmBiBITFIELDS): string</a></li>
           </ul></dd>
+<dt><a name="toIco" href="#toIco"><span>toIco:</span></a></dt><dd><ul class="simple">
+<li><a class="reference external"
+          data-doc-search-tag="ico: toIco(img: ImgObj; kind: IcoKind = ikIco): string" href="prettyimg/img_format/ico.html#toIco%2CImgObj%2CIcoKind">ico: toIco(img: ImgObj; kind: IcoKind = ikIco): string</a></li>
+          <li><a class="reference external"
+          data-doc-search-tag="ico: toIco(imgs: seq[ImgObj]; kind: IcoKind = ikIco): string" href="prettyimg/img_format/ico.html#toIco%2Cseq%5BImgObj%5D%2CIcoKind">ico: toIco(imgs: seq[ImgObj]; kind: IcoKind = ikIco): string</a></li>
+          </ul></dd>
 <dt><a name="toPng" href="#toPng"><span>toPng:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
-          data-doc-search-tag="png: toPng(img: var ImgObj; channels: int = 4): string" href="prettyimg/img_format/png.html#toPng%2CImgObj%2Cint">png: toPng(img: var ImgObj; channels: int = 4): string</a></li>
+          data-doc-search-tag="png: toPng(img: ImgObj; channels: int = 4): string" href="prettyimg/img_format/png.html#toPng%2CImgObj%2Cint">png: toPng(img: ImgObj; channels: int = 4): string</a></li>
           </ul></dd>
 <dt><a name="w" href="#w"><span>w:</span></a></dt><dd><ul class="simple">
 <li><a class="reference external"
@@ -306,7 +332,7 @@ window.addEventListener('DOMContentLoaded', main);
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 16:59:29 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 17:43:00 UTC</small>
       </div>
     </div>
   </div>

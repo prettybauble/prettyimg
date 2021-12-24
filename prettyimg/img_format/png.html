@@ -114,12 +114,12 @@ window.addEventListener('DOMContentLoaded', main);
   </ul>
   <ul class="simple nested-toc-section">savePng
       <li><a class="reference" href="#savePng%2CImgObj%2Cstring"
-    title="savePng(img: var ImgObj; filename: string)">savePng(img: var ImgObj; filename: string)</a></li>
+    title="savePng(img: ImgObj; filename: string)">savePng(img: ImgObj; filename: string)</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">toPng
       <li><a class="reference" href="#toPng%2CImgObj%2Cint"
-    title="toPng(img: var ImgObj; channels: int = 4): string">toPng(img: var ImgObj; channels: int = 4): string</a></li>
+    title="toPng(img: ImgObj; channels: int = 4): string">toPng(img: ImgObj; channels: int = 4): string</a></li>
 
   </ul>
 
@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', main);
   <div class="nine columns" id="content">
   <div id="tocRoot"></div>
   
-  <p class="module-desc"></p>
+  <p class="module-desc">Provides writing PNG files.</p>
   <div class="section" id="6">
 <h1><a class="toc-backref" href="#6">Imports</a></h1>
 <dl class="item">
@@ -151,7 +151,7 @@ Returns Chunk
 </dd>
 </div>
 <div id="savePng,ImgObj,string">
-<dt><pre><span class="Keyword">proc</span> <a href="#savePng%2CImgObj%2Cstring"><span class="Identifier">savePng</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="../img/image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">;</span> <span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ZippyError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">proc</span> <a href="#savePng%2CImgObj%2Cstring"><span class="Identifier">savePng</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <a href="../img/image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">;</span> <span class="Identifier">filename</span><span class="Other">:</span> <span class="Identifier">string</span><span class="Other">)</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">IOError</span><span class="Other">,</span> <span class="Identifier">ZippyError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">WriteIOEffect</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -160,7 +160,7 @@ Saves Image as PNG file.
 </dd>
 </div>
 <div id="toPng,ImgObj,int">
-<dt><pre><span class="Keyword">proc</span> <a href="#toPng%2CImgObj%2Cint"><span class="Identifier">toPng</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <span class="Keyword">var</span> <a href="../img/image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">;</span> <span class="Identifier">channels</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span> <span class="DecNumber">4</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ZippyError</span><span class="Other">]</span><span class="Other">,</span>
+<dt><pre><span class="Keyword">func</span> <a href="#toPng%2CImgObj%2Cint"><span class="Identifier">toPng</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <a href="../img/image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">;</span> <span class="Identifier">channels</span><span class="Other">:</span> <span class="Identifier">int</span> <span class="Other">=</span> <span class="DecNumber">4</span><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">string</span> {.<span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ZippyError</span><span class="Other">]</span><span class="Other">,</span>
     <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -178,7 +178,7 @@ Converts the Image object to PNG. <a class="reference external" href="https://en
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 16:59:29 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 17:43:00 UTC</small>
       </div>
     </div>
   </div>
