@@ -40,3 +40,9 @@ suite "Image":
   test "save to PNG":
     var img = loadBmp("assets/sample.bmp")
     img.savePng("output.png")
+
+  test "save to ICO":
+    var
+      img = loadBmp("assets/sample.bmp")
+      cropped = crop(img, 0, 0, 256, 256)
+    cropped.saveIco("output.ico")

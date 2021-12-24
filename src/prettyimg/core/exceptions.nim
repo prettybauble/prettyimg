@@ -5,4 +5,5 @@ type
   ReadFromStringError* = object of ValueError
   ImageOutOfBoundsError* = object of ValueError
   ImageReadError* = object of ValueError
+  IcoError* = object of ValueError
 {.pop.}

@@ -1,4 +1,5 @@
 # author: Ethosa
+## Provides writing PNG files.
 import
   ../img/image,
   ../core,
@@ -15,12 +16,13 @@ func chunk*(kind: PngChunkKind, data: string): string =
   result.add(crc32($kind & data).swap())
 
 
-proc toPng*(img: var ImgObj, channels: int = 4): string =
+func toPng*(img: ImgObj, channels: int = 4): string =
   ## Converts the Image object to PNG.
   ## https://en.wikipedia.org/wiki/Portable_Network_Graphics
-  var rgba = img.rgba
+  var
+    rgba = img.rgba
+    idat = newString(img.w * img.h * channels + img.h)
   let data = cast[ptr UncheckedArray[uint8]](addr rgba[0])
-  var idat = newString(img.w * img.h * channels + img.h)
 
   # File header
   result.add("\x89\x50\x4E\x47\x0D\x0A\x1A\x0A")
@@ -57,7 +59,7 @@ proc toPng*(img: var ImgObj, channels: int = 4): string =
   result.add(chunk(pcIEND, ""))
 
 
-proc savePng*(img: var ImgObj, filename: string) =
+proc savePng*(img: ImgObj, filename: string) =
   ## Saves Image as PNG file.
   var f = open(filename, fmWrite)
   f.write(img.toPng())

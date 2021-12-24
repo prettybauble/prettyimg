@@ -1,7 +1,7 @@
 [Package]
 name = "prettyimg"
 author = "prettybauble"
-version = "0.0.3"
+version = "0.0.4"
 description = "Template for prettybauble repositories"
 license = "MIT"
 srcDir = "src"

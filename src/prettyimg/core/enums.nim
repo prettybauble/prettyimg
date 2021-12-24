@@ -35,4 +35,7 @@ type
     pctIME = "tIME",  ## stores the time that the image was last changed.
     pctRNS = "tRNS",  ## contains transparency information
     pczTXt = "zTXt"  ## contains compressed text (and a compression method marker) with the same limits as `tEXt`.
+  IcoKind* = enum
+    ikIco = 1,
+    ikCur = 2
 {.pop.}
