@@ -32,7 +32,7 @@ proc fromBmp*(src: string): ImgObj =
   of 32:
     for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, y] = Color(
+        result[x, y] = clr(
           read[uint8](src, offset),
           read[uint8](src, offset + 1),
           read[uint8](src, offset + 2),
@@ -42,7 +42,7 @@ proc fromBmp*(src: string): ImgObj =
   of 24:
     for y in countdown(h-1, 0):
       for x in 0..<w:
-        result[x, y] = Color(
+        result[x, y] = clr(
           read[uint8](src, offset + 2),
           read[uint8](src, offset + 1),
           read[uint8](src, offset),
@@ -95,7 +95,7 @@ func toBmp*(img: ImgObj, depth: uint16 = 32,
 
   for y in countdown(img.h-1, 0):
     for x in 0..<img.w:
-      let clr = img[x, y].toInt()
+      let clr = img[x, y].rgb255()
       result.add(clr.r)
       result.add(clr.g)
       result.add(clr.b)

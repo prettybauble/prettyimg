@@ -12,7 +12,10 @@ type
 
 {.push inline.}
 
-func initImg*(w, h: int, background: ColorObj = Color(1f, 1, 1)): ImgObj =
+func initImg*(
+    w, h: int,
+    background: ColorObj = clr(1f, 1f, 1f)
+): ImgObj =
   ## Initializes a new image object.
   ##
   ## ### Arguments:
@@ -26,10 +29,10 @@ func initImg*(w, h: int, background: ColorObj = Color(1f, 1, 1)): ImgObj =
 func `data`*(img: ImgObj): seq[ColorObj] = img.data
 func `w`*(img: ImgObj): int = img.w
 func `h`*(img: ImgObj): int = img.h
-func `rgba`*(img: ImgObj): seq[ColorRGBA] =
+func `rgba`*(img: ImgObj): seq[Color255] =
   result = @[]
   for i in img.data:
-    result.add(i.toInt())
+    result.add(i.rgb255())
 
 func contains*(img: ImgObj, x, y: int): bool =
   x <= img.w and y <= img.h

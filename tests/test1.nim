@@ -7,7 +7,7 @@ suite "Image":
   var image: ImgObj
 
   test "init image object":
-    image = initImg(1024, 1024, Color(0.2, 0.3, 0.4))
+    image = initImg(1024, 1024, clr(0.2, 0.3, 0.4))
 
   test "save to BMP file":
     image.saveBMP("asd.bmp")
@@ -32,7 +32,7 @@ suite "Image":
 
   test "rotate image by 90 degrees":
     var img = loadBmp("assets/sample_sd.bmp")
-    img.rotated90().saveBMP("rotated.bmp")
+    img.rotated90().saveBMP("rotated90.bmp")
 
   test "other":
     assert (0, 0) in image  # image.contains(x, y)
@@ -46,3 +46,7 @@ suite "Image":
       img = loadBmp("assets/sample.bmp")
       cropped = crop(img, 0, 0, 256, 256)
     cropped.saveIco("output.ico")
+
+  test "rotate by any angle":
+    var img = loadBmp("assets/sample.bmp")
+    img.rotate(55).savePng("rotated45.png")
