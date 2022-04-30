@@ -149,12 +149,12 @@ window.addEventListener('DOMContentLoaded', main);
   </ul>
   <ul class="simple nested-toc-section">initImg
       <li><a class="reference" href="#initImg%2Cint%2Cint%2CColorObj"
-    title="initImg(w, h: int; background: ColorObj = Color(1.0'f32, 1, 1)): ImgObj">initImg(w, h: int; background: ColorObj = Color(1.0'f32, 1, 1)): ImgObj</a></li>
+    title="initImg(w, h: int; background: ColorObj = clr(1.0'f32, 1.0'f32, 1.0'f32)): ImgObj">initImg(w, h: int; background: ColorObj = clr(1.0'f32, 1.0'f32, 1.0'f32)): ImgObj</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">rgba
       <li><a class="reference" href="#rgba%2CImgObj"
-    title="rgba(img: ImgObj): seq[ColorRgba]">rgba(img: ImgObj): seq[ColorRgba]</a></li>
+    title="rgba(img: ImgObj): seq[Color255]">rgba(img: ImgObj): seq[Color255]</a></li>
 
   </ul>
   <ul class="simple nested-toc-section">w
@@ -258,7 +258,7 @@ Returns pixel at <tt class="docutils literal"><span class="pre"><span class="Ide
 </dd>
 </div>
 <div id="initImg,int,int,ColorObj">
-<dt><pre><span class="Keyword">func</span> <a href="#initImg%2Cint%2Cint%2CColorObj"><span class="Identifier">initImg</span></a><span class="Other">(</span><span class="Identifier">w</span><span class="Other">,</span> <span class="Identifier">h</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">background</span><span class="Other">:</span> <span class="Identifier">ColorObj</span> <span class="Other">=</span> <span class="Identifier">Color</span><span class="Other">(</span><span class="FloatNumber">1.0'f32</span><span class="Other">,</span> <span class="DecNumber">1</span><span class="Other">,</span> <span class="DecNumber">1</span><span class="Other">)</span><span class="Other">)</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a> {.
+<dt><pre><span class="Keyword">func</span> <a href="#initImg%2Cint%2Cint%2CColorObj"><span class="Identifier">initImg</span></a><span class="Other">(</span><span class="Identifier">w</span><span class="Other">,</span> <span class="Identifier">h</span><span class="Other">:</span> <span class="Identifier">int</span><span class="Other">;</span> <span class="Identifier">background</span><span class="Other">:</span> <span class="Identifier">ColorObj</span> <span class="Other">=</span> <span class="Identifier">clr</span><span class="Other">(</span><span class="FloatNumber">1.0'f32</span><span class="Other">,</span> <span class="FloatNumber">1.0'f32</span><span class="Other">,</span> <span class="FloatNumber">1.0'f32</span><span class="Other">)</span><span class="Other">)</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a> {.
     <span class="Identifier">inline</span><span class="Other">,</span> <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
@@ -269,7 +269,7 @@ Initializes a new image object.
 </dd>
 </div>
 <div id="rgba,ImgObj">
-<dt><pre><span class="Keyword">func</span> <a href="#rgba%2CImgObj"><span class="Identifier">rgba</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">ColorRgba</span><span class="Other">]</span> {.<span class="Identifier">inline</span><span class="Other">,</span> <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dt><pre><span class="Keyword">func</span> <a href="#rgba%2CImgObj"><span class="Identifier">rgba</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">)</span><span class="Other">:</span> <span class="Identifier">seq</span><span class="Other">[</span><span class="Identifier">Color255</span><span class="Other">]</span> {.<span class="Identifier">inline</span><span class="Other">,</span> <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
 
@@ -294,7 +294,7 @@ Initializes a new image object.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 17:43:00 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-04-30 15:55:43 UTC</small>
       </div>
     </div>
   </div>

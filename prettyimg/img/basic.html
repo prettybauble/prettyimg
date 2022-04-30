@@ -117,6 +117,11 @@ window.addEventListener('DOMContentLoaded', main);
     title="paste(img: var ImgObj; dst: ImgObj; x1, y1: int)">paste(img: var ImgObj; dst: ImgObj; x1, y1: int)</a></li>
 
   </ul>
+  <ul class="simple nested-toc-section">rotate
+      <li><a class="reference" href="#rotate%2CImgObj%2Cfloat"
+    title="rotate(img: ImgObj; degree: float): ImgObj">rotate(img: ImgObj; degree: float): ImgObj</a></li>
+
+  </ul>
   <ul class="simple nested-toc-section">rotated90
       <li><a class="reference" href="#rotated90%2CImgObj"
     title="rotated90(img: ImgObj): ImgObj">rotated90(img: ImgObj): ImgObj</a></li>
@@ -147,7 +152,7 @@ window.addEventListener('DOMContentLoaded', main);
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ImageOutOfBoundsError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
-
+Crops image in rect(x1, y1, x2, y2)
 
 </dd>
 </div>
@@ -156,7 +161,16 @@ window.addEventListener('DOMContentLoaded', main);
     <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ImageOutOfBoundsError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
 <dd>
 
+Pastes the image at x1,y1 position
 
+</dd>
+</div>
+<div id="rotate,ImgObj,float">
+<dt><pre><span class="Keyword">proc</span> <a href="#rotate%2CImgObj%2Cfloat"><span class="Identifier">rotate</span></a><span class="Other">(</span><span class="Identifier">img</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a><span class="Other">;</span> <span class="Identifier">degree</span><span class="Other">:</span> <span class="Identifier">float</span><span class="Other">)</span><span class="Other">:</span> <a href="image.html#ImgObj"><span class="Identifier">ImgObj</span></a> {.
+    <span><span class="Other pragmadots">...</span></span><span class="pragmawrap"><span class="Identifier">raises</span><span class="Other">:</span> <span class="Other">[</span><span class="Identifier">ImageOutOfBoundsError</span><span class="Other">]</span><span class="Other">,</span> <span class="Identifier">tags</span><span class="Other">:</span> <span class="Other">[</span><span class="Other">]</span></span>.}</pre></dt>
+<dd>
+
+Rotates the image by <tt class="docutils literal"><span class="pre"><span class="Identifier">degree</span></span></tt>.
 
 </dd>
 </div>
@@ -178,7 +192,7 @@ Rotates image by 90 degrees.
       <div class="twelve-columns footer">
         <span class="nim-sprite"></span>
         <br/>
-        <small style="color: var(--hint);">Made with Nim. Generated: 2021-12-24 17:43:00 UTC</small>
+        <small style="color: var(--hint);">Made with Nim. Generated: 2022-04-30 15:55:43 UTC</small>
       </div>
     </div>
   </div>

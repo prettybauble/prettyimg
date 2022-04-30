@@ -1,3 +1,4 @@
 crop	prettyimg/img/basic.html#crop,ImgObj,int,int,int,int	basic: crop(img: ImgObj; x1, y1, x2, y2: int): ImgObj	
 paste	prettyimg/img/basic.html#paste,ImgObj,ImgObj,int,int	basic: paste(img: var ImgObj; dst: ImgObj; x1, y1: int)	
 rotated90	prettyimg/img/basic.html#rotated90,ImgObj	basic: rotated90(img: ImgObj): ImgObj	
+rotate	prettyimg/img/basic.html#rotate,ImgObj,float	basic: rotate(img: ImgObj; degree: float): ImgObj	
