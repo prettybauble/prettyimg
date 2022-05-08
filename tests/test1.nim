@@ -49,4 +49,6 @@ suite "Image":
 
   test "rotate by any angle":
     var img = loadBmp("assets/sample.bmp")
-    img.rotate(55).savePng("rotated45.png")
+    img.rotate(361).savePng("rotated55.png")
+    img.rotate(5).savePng("rotated5.png")
+    img.rotate(810).savePng("rotated810.png")
